@@ -943,7 +943,7 @@ Main Banner Area CSS
 .main-banner.bg-two {
   position: relative;
   z-index: 1;
-  background-image: url(../../assets/img/giorgio/home-bg.jpg);
+  background-image: url(../../assets/img/francesca/homepage.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -5112,10 +5112,10 @@ Partner Area CSS
 }
 
 .partner-list .partner-item {
-  -ms-flex: 0 0 20%;
+  -ms-flex: 0 0 25%;
   -webkit-box-flex: 0;
-  flex: 0 0 20%;
-  max-width: 20%;
+  flex: 0 0 25%;
+  max-width: 25%;
   padding-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
