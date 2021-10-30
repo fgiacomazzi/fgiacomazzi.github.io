@@ -2607,6 +2607,16 @@ Doctor Area CSS
   padding-bottom: 0;
 }
 
+.swal2-container .swal2-select{
+  display: none !important;
+}
+
+.blurdisable {
+  /* Any browser which supports CSS3 */
+  filter: blur(10px);
+  pointer-events: none;
+}
+
 .doctor-item .content h3 {
   font-size: 18px;
   margin-bottom: 6px;

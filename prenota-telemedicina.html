@@ -28,6 +28,10 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- Responsive CSS -->
 		<link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- CALENDAR ELEMENTS -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/calendar/css/style.css">
 		
 		<title>Francesca Giacomazzi - Cardiologo e Internista a Milano</title>
 
@@ -226,10 +230,10 @@
                 <div class="d-table-cell">
                     <div class="container">
                         <div class="page-title-content">
-                            <h2>Visite ed esami in regime privato a Milano</h2>
+                            <h2>Prenotazione visita in telemedicina</h2>
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li>Possibilità</li>
+                                <li>Prenotazioni</li>
                             </ul>
                         </div>
                     </div>
@@ -239,93 +243,79 @@
         <!-- End Page Title Area -->
 
         <!-- Start Services Area -->
-        <section class="services-section bg-f4f6fe pt-100 pb-100">
+        <section class="ftco-section">
             <div class="container">
-                <div class="section-title">
-                    <span>Visite ed esami in regime privato a Milano</span>
-                    <h2>Le possibilità offerte</h2>
-                    <p>Seleziona il servizio al quale sei interessato per scoprirne di più.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center mb-5">
+                        <h2 class="heading-section">Calendario disponibilità</h2>
+                        <!-- TO HANDLE CALENDAR GO IN ASSETS/CALEDAR/JS/MAIN.JS -->
+                        Seleziona il giorno in cui vorresti effettuare la visita e scegli la fascia oraria più adatta a te per proseuire.
+                    </div>
                 </div>
-
                 <div class="row">
-                    <div class="col-lg-4 col-md-6" style="cursor: pointer;" onclick="window.location='visita-medica.html'">
-                        <div class="services-item-two">
-                            <div class="icon">
-                                <i class="flaticon-doctor"></i>
+                    <div class="col-md-12">
+                        <div class="cal-content w-100">
+                            <div class="calendar-container">
+                                <div class="calendar">
+                                    <div class="year-header">
+                                        <span class="left-button fa fa-chevron-left" id="prev"> </span>
+                                        <span class="year" id="label"></span>
+                                        <span class="right-button fa fa-chevron-right" id="next"> </span>
+                                    </div>
+                                    <table class="months-table w-100">
+                                        <tbody>
+                                        <tr class="months-row">
+                                            <td class="month">Gen</td>
+                                            <td class="month">Feb</td>
+                                            <td class="month">Mar</td>
+                                            <td class="month">Apr</td>
+                                            <td class="month">Mag</td>
+                                            <td class="month">Giu</td>
+                                            <td class="month">Lug</td>
+                                            <td class="month">Ago</td>
+                                            <td class="month">Set</td>
+                                            <td class="month">Ott</td>
+                                            <td class="month">Nov</td>
+                                            <td class="month">Dic</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="days-table w-100">
+                                        <td class="day">Lun</td>
+                                        <td class="day">Mar</td>
+                                        <td class="day">Mer</td>
+                                        <td class="day">Gio</td>
+                                        <td class="day">Ven</td>
+                                        <td class="day">Sab</td>
+                                        <td class="day">Dom</td>
+                                    </table>
+                                    <div class="frame">
+                                        <table class="dates-table w-100">
+                                            <tbody class="tbody">
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--button class="button" id="add-button">Prenota!</button-->
+                                </div>
                             </div>
-                            <a href="visita-medica.html">
-                                <h3>Visita medica</h3>
-                            </a>
-                            <p>Effettuo visite cardiologiche e visite interniste sia a Milano (zona Cordusio), sia a domicilio, sia online in telemedicina. Also in english.</p>
-                            <a href="visita-medica.html" class="read-btn">Leggi di più +</a>
+                            <div class="events-container">
+                            </div>
+                            <div class="dialog" id="dialog">
+                                <h2 class="dialog-header"> Nuova prenotazione </h2>
+                                <!--form class="form" id="form">
+                                    <div class="form-container" align="center">
+                                        <label class="form-label" id="valueFromMyButton" for="name">Event name</label>
+                                        <input class="input" type="text" id="name" maxlength="36">
+                                        <label class="form-label" id="valueFromMyButton" for="count">Number of people to invite</label>
+                                        <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
+                                        <input type="button" value="Cancel" class="button" id="cancel-button">
+                                        <input type="button" value="OK" class="button button-white" id="ok-button">
+                                    </div>
+                                </form-->
+                            </div>
                         </div>
                     </div>
-
-
-                    <div class="col-lg-4 col-md-6" style="cursor: pointer;" onclick="window.location='esami-privato-milano.html'">
-                        <div class="services-item-two">
-                            <div class="icon">
-                                <i class="flaticon-shield"></i>
-                            </div>
-                            <a href="esami-privato-milano.html">
-                                <h3>Esami in regime privato</h3>
-                            </a>
-                            <p>Effettuo ECG ed Ecografie in regime privato a Milano senza lunghe attese. Su richiesta gli <b>esami si effettuano anche a domicilio</b>.</p>
-                            <a href="esami-privato-milano.html" class="read-btn">Leggi di più +</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6" style="cursor: pointer;" onclick="window.location='pacchetti-checkup.html'">
-                        <div class="services-item-two">
-                            <div class="icon">
-                                <i class="flaticon-beauty-treatment"></i>
-                            </div>
-                            <a href="pacchetti-checkup.html">
-                                <h3>Pacchetti Visita + Esame</h3>
-                            </a>
-                            <p>Prenotando gli esami necessari insieme ad una visita completa è possibile ricevere un trattamento completo ad un prezzo "tutto incluso".</p>
-                            <a href="pacchetti-checkup.html" class="read-btn">Leggi di più +</a>
-                        </div>
-                    </div>
-
-                    <!--div class="col-lg-4 col-md-6">
-                        <div class="services-item-two">
-                            <div class="icon">
-                                <i class="flaticon-mental-health"></i>
-                            </div>
-                            <a href="single-visite-ed-esami-privato-milano.html">
-                                <h3>Mental Health</h3>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore</p>
-                            <a href="single-visite-ed-esami-privato-milano.html" class="read-btn">Read More +</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="services-item-two">
-                            <div class="icon">
-                                <i class="flaticon-crutches"></i>
-                            </div>
-                            <a href="single-visite-ed-esami-privato-milano.html">
-                                <h3>Orthopedics</h3>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore</p>
-                            <a href="single-visite-ed-esami-privato-milano.html" class="read-btn">Read More +</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="services-item-two">
-                            <div class="icon">
-                                <i class="flaticon-pregnancy"></i>
-                            </div>
-                            <a href="single-visite-ed-esami-privato-milano.html">
-                                <h3>Gynecological</h3>
-                            </a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore</p>
-                            <a href="single-visite-ed-esami-privato-milano.html" class="read-btn">Read More +</a>
-                        </div>
-                    </div-->
                 </div>
             </div>
         </section>
@@ -501,6 +491,10 @@
                             <div class="step-btn">
                                 <a href="tel:02866592" class="default-btn-two" style="border-radius: 10px;">
                                     Chiama: 02 866592
+                                    <span></span>
+                                </a>
+                                <a href="prenota-telemedicina.html" class="default-btn" style="border-radius: 10px;">
+                                    Telemedicina
                                     <span></span>
                                 </a>
                             </div>
@@ -721,5 +715,12 @@
 		<script src="assets/js/contact-form-script.js"></script>
         <!-- Custom JS -->
         <script src="assets/js/main.js"></script>
+        <!-- CALENDAR ELEMENTS -->
+        <script src="assets/calendar/js/jquery.min.js"></script>
+        <script src="assets/calendar/js/popper.js"></script>
+        <script src="assets/calendar/js/bootstrap.min.js"></script>
+        <script src="assets/calendar/js/main.js"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
 </html>

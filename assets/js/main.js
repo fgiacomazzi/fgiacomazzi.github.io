@@ -11,6 +11,20 @@ jQuery(function ($) {
             }
 		});
 
+	    if (window.location.hash === "#appointmentbooked") {
+			Swal.fire(
+				'Il tuo appuntamento è confermato!',
+				'Riceverai maggiori informazioni su come connetterti alla piattaforma di telemedicina via email o attraverso una chiamata telefonica.',
+				'success'
+			)
+		} else if (window.location.hash === "#paymentko") {
+			Swal.fire(
+				'Errore!',
+				'Il tuo pagamento non è andato a buon fine.<br> Per favore, riprova.',
+				'error'
+			)
+		}
+
         // Button Hover JS
 		$(function() {
 			$('.default-btn')
