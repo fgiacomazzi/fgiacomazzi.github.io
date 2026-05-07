@@ -290,12 +290,12 @@
                     <div class="col-lg-4 col-md-6" style="cursor: pointer;" onclick="window.location='pacchetti-checkup.html'">
                         <div class="services-item-two">
                             <div class="icon">
-                                <i class="flaticon-mental-health"></i>
+                                <i class="flaticon-mobile-app"></i>
                             </div>
                             <a href="pacchetti-checkup.html">
-                                <h3>Percorsi medici personalizzati</h3>
+                                <h3>Monitoraggio domiciliare</h3>
                             </a>
-                            <p>Check up e ricoveri, medical concierge, telemonitoraggio.</p>
+                            <p>Indicato per pazienti fragili, anziani, cardiopatici e recentemente operati: pressione, frequenza cardiaca, saturimetria, peso corporeo ed ECG del paziente vengono inviati e visionati dal medico.</p>
                             <a href="pacchetti-checkup.html" class="read-btn">Scopri di più +</a>
                         </div>
                     </div>
@@ -339,32 +339,95 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6" style="cursor: pointer;" onclick="window.location='pacchetti-checkup.html'">
-                        <div class="services-item-two">
-                            <div class="icon">
-                                <i class="flaticon-mobile-app"></i>
-                            </div>
-                            <a href="pacchetti-checkup.html">
-                                <h3>Monitoraggio domiciliare</h3>
-                            </a>
-                            <p>Indicato per pazienti fragili, anziani, cardiopatici e recentemente operati: pressione, frequenza cardiaca, saturimetria, peso corporeo ed ECG del paziente vengono inviati e visionati dal medico. Durata minima 1 mese. Prezzo: 150 € / mese + 25 € una tantum per l'attivazione.</p>
-                            <a href="pacchetti-checkup.html" class="read-btn">Scopri di più +</a>
-                        </div>
-                    </div>
+                </div>
 
-                    <div class="col-lg-4 col-md-6" style="cursor: pointer;" onclick="window.location='pacchetti-checkup.html'">
-                        <div class="services-item-two">
-                            <div class="icon">
-                                <i class="flaticon-insurance"></i>
-                            </div>
-                            <a href="pacchetti-checkup.html">
-                                <h3>Piano Terapeutico</h3>
-                            </a>
-                            <p>Per i pazienti presi in cura, quando indicato, viene stilato il piano terapeutico per i farmaci per dislipidemie (anti PCSK9, acido bempedoico, inclisiran), per l'amiloidosi TTR correlata, per ridurre il peso corporeo (GLP1 inibitori come semaglutide o tirzepatide) e per gli anticoagulanti orali diretti (apixaban, edoxaban, rivaroxaban).</p>
-                            <a href="pacchetti-checkup.html" class="read-btn">Scopri di più +</a>
-                        </div>
+                <div class="piano-terapeutico-banner">
+                    <div class="ptb-icon">
+                        <i class="flaticon-insurance"></i>
+                    </div>
+                    <div class="ptb-content">
+                        <span class="ptb-tag">Servizio incluso per i pazienti in cura</span>
+                        <h3>Piano Terapeutico</h3>
+                        <p>Per i pazienti presi in cura, quando indicato, viene stilato il piano terapeutico per i farmaci per dislipidemie (anti PCSK9, acido bempedoico, inclisiran), per l'amiloidosi TTR correlata, per il diabete con sindrome metabolica (GLP1 inibitori come semaglutide o tirzepatide) e per gli anticoagulanti orali diretti (apixaban, edoxaban, rivaroxaban).</p>
                     </div>
                 </div>
+
+                <style>
+                    .piano-terapeutico-banner {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 30px;
+                        background: linear-gradient(135deg, #ffffff 0%, #f4f8ff 100%);
+                        border: 1px solid #dbe7fb;
+                        border-radius: 18px;
+                        padding: 38px 42px;
+                        margin-top: 50px;
+                        box-shadow: 0 10px 36px rgba(33, 49, 97, 0.08);
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    .piano-terapeutico-banner::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        height: 4px;
+                        background: linear-gradient(90deg, #207ef7, #4aa3ff);
+                    }
+                    .piano-terapeutico-banner .ptb-icon {
+                        flex-shrink: 0;
+                        width: 78px;
+                        height: 78px;
+                        border-radius: 20px;
+                        background: linear-gradient(135deg, #207ef7, #4aa3ff);
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 36px;
+                        box-shadow: 0 12px 24px rgba(32, 126, 247, 0.28);
+                    }
+                    .piano-terapeutico-banner .ptb-content {
+                        flex: 1;
+                    }
+                    .piano-terapeutico-banner .ptb-tag {
+                        display: inline-block;
+                        background: #eaf2ff;
+                        color: #207ef7;
+                        font-size: 12px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.6px;
+                        padding: 5px 12px;
+                        border-radius: 20px;
+                        margin-bottom: 12px;
+                    }
+                    .piano-terapeutico-banner h3 {
+                        color: #213161;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 12px;
+                    }
+                    .piano-terapeutico-banner p {
+                        color: #5a6378;
+                        margin: 0;
+                        line-height: 1.7;
+                    }
+                    @media (max-width: 767px) {
+                        .piano-terapeutico-banner {
+                            flex-direction: column;
+                            padding: 28px 24px;
+                            gap: 18px;
+                        }
+                        .piano-terapeutico-banner .ptb-icon {
+                            width: 64px;
+                            height: 64px;
+                            font-size: 28px;
+                        }
+                        .piano-terapeutico-banner h3 { font-size: 20px; }
+                    }
+                </style>
             </div>
         </section>
         <!-- End Services Area -->

@@ -256,20 +256,261 @@
                 <h3>Esami strumentali in regime privato</h3>
                 <p>I tempi di attesa sono brevi. E’ possibile richiedere l’esecuzione solo di uno o più esami strumentali senza la visita. Gli esami vengono eseguiti anche nell'ambito della visita medica, se necessario e in base al contesto clinico.</p>
 
-                <div class="service-details-image">
+                <div class="service-details-image hero-photo">
                     <img src="assets/img/francesca/esami.jpg" alt="Ecocardiografo e lettino per il paziente">
                 </div>
 
+                <style>
+                    .hero-photo {
+                        max-width: 900px;
+                        margin: 0 auto 40px;
+                        border-radius: 16px;
+                        overflow: hidden;
+                        box-shadow: 0 12px 40px rgba(33, 49, 97, 0.12);
+                        position: relative;
+                    }
+                    .hero-photo img {
+                        width: 100%;
+                        height: 380px;
+                        object-fit: cover;
+                        object-position: center 50%;
+                        display: block;
+                        transition: transform 0.6s ease;
+                    }
+                    .hero-photo:hover img {
+                        transform: scale(1.03);
+                    }
+                    @media (max-width: 767px) {
+                        .hero-photo img { height: 260px; }
+                    }
+                </style>
+
                 <div class="service-details-content">
                     <h4>Quali esami strumentali vengono eseguiti in studio?</h4>
-                    <p>Nello studio di Via Meravigli 18 a Milano, offriamo la possibilità di eseguire i seguenti esami: Elettrocardiogramma, Ecocardiogramma Color Doppler (200 €), Ecografia addome completo (200 €) ed Ecografia tiroidea (150 €).</p>
+                    <p>Nello studio di Via Meravigli 18 a Milano è possibile eseguire i seguenti esami strumentali:</p>
 
-                    <h4>E’ possibile richiedere alcuni esami a domicilio?</h4>
-                    <p>La strumentazione presente in studio, all’avanguardia e portatile, consente l’esecuzione degli esami anche al domicilio del paziente. Prezzo su richiesta a partire da 250 €.</p>
+                    <div class="pricing-cards-row pricing-cards-row-4">
+                        <div class="pricing-card">
+                            <div class="pricing-card-icon"><i class="flaticon-doctor"></i></div>
+                            <div class="pricing-card-title">Elettrocardiogramma</div>
+                            <small class="pricing-card-sub">ECG a 12 derivazioni</small>
+                            <div class="pricing-card-price">su richiesta</div>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-card-icon"><i class="flaticon-shield"></i></div>
+                            <div class="pricing-card-title">Ecocardiogramma Color Doppler</div>
+                            <small class="pricing-card-sub">Esame del cuore con ultrasuoni</small>
+                            <div class="pricing-card-price">200 €</div>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-card-icon"><i class="flaticon-blood-test"></i></div>
+                            <div class="pricing-card-title">Ecografia addome completo</div>
+                            <small class="pricing-card-sub">Studio degli organi addominali</small>
+                            <div class="pricing-card-price">200 €</div>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-card-icon"><i class="flaticon-stethoscope"></i></div>
+                            <div class="pricing-card-title">Ecografia tiroidea</div>
+                            <small class="pricing-card-sub">Studio della ghiandola tiroidea</small>
+                            <div class="pricing-card-price">150 €</div>
+                        </div>
+                    </div>
 
-                    <h4>Certificato medico con ECG per attività sportiva non agonistica</h4>
-                    <p>E’ possibile richiedere un certificato medico per attività sportiva non agonistica. Per pazienti nuovi sarà effettuata una breve visita volta a conoscere la storia clinica del paziente.</p>
-                    <p>Prezzo 70 €</p>
+                    <div class="info-callout">
+                        <div class="info-callout-icon"><i class="flaticon-pin"></i></div>
+                        <div>
+                            <strong>E’ possibile richiedere alcuni esami a domicilio?</strong>
+                            <p>La strumentazione presente in studio, all’avanguardia e portatile, consente l’esecuzione degli esami anche al domicilio del paziente. <strong style="color:#207ef7;">Prezzo su richiesta a partire da 250 €.</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-card-icon"><i class="flaticon-heart"></i></div>
+                            <h3 class="service-card-title">Certificato medico con ECG<br><span>per attività sportiva non agonistica</span></h3>
+                        </div>
+                        <p>E’ possibile richiedere un certificato medico per attività sportiva non agonistica. Per pazienti nuovi sarà effettuata una breve visita volta a conoscere la storia clinica del paziente.</p>
+
+                        <div class="price-tag">
+                            <i class="flaticon-clock price-tag-icon"></i>
+                            <div class="price-tag-text">
+                                Prezzo del certificato: <span class="highlight">70 €</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <style>
+                        .pricing-cards-row {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            gap: 22px;
+                            margin-top: 25px;
+                            margin-bottom: 40px;
+                        }
+                        .pricing-cards-row-4 {
+                            grid-template-columns: repeat(4, 1fr);
+                        }
+                        @media (max-width: 991px) {
+                            .pricing-cards-row-4 { grid-template-columns: repeat(2, 1fr); }
+                        }
+                        @media (max-width: 575px) {
+                            .pricing-cards-row, .pricing-cards-row-4 { grid-template-columns: 1fr; }
+                        }
+                        .pricing-card {
+                            background: #ffffff;
+                            border: 1px solid #eef1f8;
+                            border-top: 4px solid #207ef7;
+                            border-radius: 12px;
+                            padding: 28px 24px;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        .pricing-card:hover {
+                            transform: translateY(-5px);
+                            box-shadow: 0 12px 32px rgba(33, 49, 97, 0.10);
+                        }
+                        .pricing-card-icon {
+                            width: 52px;
+                            height: 52px;
+                            border-radius: 14px;
+                            background: #eaf2ff;
+                            color: #207ef7;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 24px;
+                            margin-bottom: 16px;
+                        }
+                        .pricing-card-icon i { line-height: 1; }
+                        .pricing-card-title {
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #213161;
+                            margin-bottom: 6px;
+                            line-height: 1.4;
+                        }
+                        .pricing-card-sub {
+                            color: #7b7c93;
+                            display: block;
+                            margin-bottom: 12px;
+                            font-size: 13px;
+                        }
+                        .pricing-card-price {
+                            font-size: 20px;
+                            font-weight: 700;
+                            color: #207ef7;
+                        }
+
+                        .info-callout {
+                            display: flex;
+                            align-items: flex-start;
+                            gap: 18px;
+                            background: #f4f8ff;
+                            border-left: 4px solid #207ef7;
+                            padding: 20px 22px;
+                            border-radius: 10px;
+                            margin: 10px 0 40px;
+                        }
+                        .info-callout-icon {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background: #fff;
+                            color: #207ef7;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 18px;
+                            flex-shrink: 0;
+                        }
+                        .info-callout strong {
+                            color: #213161;
+                            display: block;
+                            margin-bottom: 4px;
+                        }
+                        .info-callout p {
+                            margin: 0;
+                            color: #7b7c93;
+                        }
+
+                        .service-card {
+                            background: #ffffff;
+                            border-radius: 16px;
+                            padding: 36px 38px;
+                            margin-bottom: 35px;
+                            box-shadow: 0 6px 28px rgba(33, 49, 97, 0.06);
+                            border: 1px solid #eef1f8;
+                            position: relative;
+                            overflow: hidden;
+                        }
+                        .service-card::before {
+                            content: '';
+                            position: absolute;
+                            left: 0; top: 0; bottom: 0;
+                            width: 5px;
+                            background: linear-gradient(180deg, #207ef7, #4aa3ff);
+                        }
+                        .service-card-header {
+                            display: flex;
+                            align-items: center;
+                            gap: 18px;
+                            margin-bottom: 22px;
+                        }
+                        .service-card-icon {
+                            width: 62px;
+                            height: 62px;
+                            border-radius: 16px;
+                            background: linear-gradient(135deg, #207ef7, #4aa3ff);
+                            color: #fff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 28px;
+                            flex-shrink: 0;
+                            box-shadow: 0 8px 18px rgba(32, 126, 247, 0.25);
+                        }
+                        .service-card-title {
+                            margin: 0;
+                            color: #213161;
+                            font-size: 22px;
+                            font-weight: 700;
+                            line-height: 1.3;
+                        }
+                        .service-card-title span {
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: #7b7c93;
+                        }
+                        .price-tag {
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 14px;
+                            background: #f4f8ff;
+                            border: 1px dashed #207ef7;
+                            padding: 14px 20px;
+                            border-radius: 10px;
+                            margin-top: 8px;
+                        }
+                        .price-tag-icon {
+                            color: #207ef7;
+                            font-size: 20px;
+                        }
+                        .price-tag-text {
+                            color: #5a6378;
+                            font-weight: 500;
+                            font-size: 14.5px;
+                        }
+                        .price-tag-text .highlight {
+                            color: #207ef7;
+                            font-weight: 700;
+                        }
+                        @media (max-width: 575px) {
+                            .service-card { padding: 28px 22px; }
+                            .service-card-header { gap: 14px; }
+                            .service-card-icon { width: 52px; height: 52px; font-size: 24px; }
+                            .service-card-title { font-size: 19px; }
+                            .price-tag { flex-wrap: wrap; }
+                        }
+                    </style>
 
                     <!-- Start Appointment Area -->
                     <section class="appointment-area ptb-100">
